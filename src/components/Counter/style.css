@@ -1,0 +1,67 @@
+.counter-wrapper {
+    display: grid;
+    place-content: center;
+    gap: 3rem;
+
+    padding: 3rem 4rem;
+    width: max-content;
+    min-width: 300px;
+
+    border: 1px solid rgba(255, 255, 255, .075);
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, .05);
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.counter-wrapper span {
+    text-align: center;
+    color: white;
+}
+
+.counter-wrapper h2 {
+    font-weight: 100;
+}
+
+.counter-button-wrapper {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    place-content: center;
+    gap: 3rem;
+}
+
+.counter-button-wrapper button {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    width: 13rem;
+
+    padding: 1rem 1.8rem;
+
+    border: none;
+    border-radius: 1.8rem;
+    box-shadow: 0 .5rem .8rem rgba(0, 0, 0, .3);
+
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+
+    transition: all .5s;
+}
+
+.counter-button-wrapper button:hover {
+    outline: none;
+    transform: scale(1.03);
+}
+
+.counter-button-wrapper button.increment-button {
+    background: linear-gradient(140deg, #2aacc0, var(--react));
+}
+
+.counter-button-wrapper button.decrement-button {
+    background: linear-gradient(140deg, var(--redux), var(--primary-color));
+}
+
+.counter-button-wrapper button svg {
+    width: 2rem;
+}
